@@ -102,7 +102,7 @@ def track_update(frame):
     return bb
 
 def main():
-    cap = cv2.VideoCapture('test2.265')
+    cap = cv2.VideoCapture('Pexels-Videos-4585.264')
     if not cap.isOpened():
         print("ERROR: cannot open video file!")
         exit()
