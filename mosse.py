@@ -102,7 +102,7 @@ def track_update(frame):
     return bb
 
 def main():
-    cap = cv2.VideoCapture('Pexels-Videos-4585.264')
+    cap = cv2.VideoCapture('test2.265')
     if not cap.isOpened():
         print("ERROR: cannot open video file!")
         exit()
@@ -115,7 +115,7 @@ def main():
         frame_gray = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
 
         if init_bb is None:
-            init_bb = [270, 160, 53, 33] 
+            init_bb = [1135, 826, 77, 159] 
             #init_bb = cv2.selectROI("Frame", frame, fromCenter=False, showCrosshair=True)
             track_init(init_bb, frame_gray)
             x, y, w, h = init_bb[0], init_bb[1], init_bb[2], init_bb[3]
